@@ -5,8 +5,8 @@
  ## Code Compilation
 | Day | Project                      | Description |
 |-----|------------------------------|-------------|
-| 1   | Band Name Generator          |             |
-| 2   | Tip Calculator               |             |
+| 1   | [Band Name Generator](Day 1 Band Name Generator)          |             |
+| 2   | [Tip Calculator](Day 2 Tip Calculator)               |             |
 | 3   | Treasure Island: Mystic Lake |             |
 | 4   | Rock Paper Scissors          |             |
 | 5   | Password Generator           |             |
@@ -16,7 +16,7 @@
 | 9   | Secret Auction Program       |             |
 | 10  | Calculator                   |             |
 | 11  | Blackjack                    |             |
-| 12  | Number Guesing Game          |             |
+| 12  | Number Guessing Game          |             |
 | 13  | FizzBuzz                     |             |
 | 14  | Higher Lower Game            |             |
 | 15  | Coffee Machine               |             |
@@ -36,11 +36,11 @@
 | 29  | Password Manager             |             |
 | 30  | Password Manager with Search |             |
 | 31  | Flash Card App               |             |
-| 32  | Automated Birthday WIsher    |             |
+| 32  | Automated Birthday Wisher    |             |
 | 33  | ISS Overhead Notifier        |             |
 | 34  | Quiz App                     |             |
 | 35  | Rain SMS Alert               |             |
-| 36  | Srock Alert                  |             |
+| 36  | Stock Alert                  |             |
 | 37  | Habit Tracker                |             |
 | 38  | Workout Tracker              |             |
 | 39  | Flight Deal Finder           |             |
