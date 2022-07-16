@@ -3,15 +3,15 @@
  It exists as a reference for me, as well as a means to show others what I have worked on so far. 
  
  ## Code Compilation
-| Day | Project                                                            | Description |
-|:----:|--------------------------------------------------------------------|-------------|
-| 1   | [Band Name Generator](/Day%201%20Band%20Name%20Generator/)                   |             |
-| 2   | [Tip Calculator](/Day%202%20Tip%20Calculator/)                             |             |
-| 3   | [Treasure Island: Mystic Lake](/Day%203%20Mystic%20Lake/)                  |             |
-| 4   | [Rock Paper Scissors](/Day%204%20Rock%20Paper%20Scissors/)                   |             |
-| 5   | [Password Generator](/Day%205%20PyPassword%20Generator/)                   |             |
+| Day | Project                                                            | Description | Things Learnt |
+|:----:|-------------------------------------------------------------------|-------------|---------------|
+| 1   | [Band Name Generator](/Day%201%20Band%20Name%20Generator/)                   | A simple project to create a band name from the names of your city and pet.| Strings, concatenation, variables, input and print functions.
+| 2   | [Tip Sharing Calculator](/Day%202%20Tip%20Calculator/)                       | Uses basic arithmetics to divvy tips for a number of people. | Integers, floats, f-strings, and basic arithmetics. |
+| 3   | [Treasure Island: Mystic Lake](/Day%203%20Mystic%20Lake/)                  | Created a text-based game that gives users options in pursuit of a treasure.  | Conditional logic, ifs, elifs, and else. |
+| 4   | [Rock Paper Scissors](/Day%204%20Rock%20Paper%20Scissors/)                   | Recreated the classic rock paper scissors game, with ASCII art. | Lists and the random module |
+| 5   | [Password Generator](/Day%205%20PyPassword%20Generator/)                   | Random password generator using a list of numbers, letters, and symbols. | For loops, shuffling, joining and appending lists. | 
 | 6   | [Escaping the Maze](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json)  |The final project was on [Reeborg's World](https://reeborg.ca/index_en.html)             |
-| 7   | [Hangman](/Day%207%20Hangman/)                                           |             |
+| 7   | [Hangman](/Day%207%20Hangman/)                                           | Created hangman game with ASCII art | While loops, len and choice functions, and importing files. |
 | 8   | [Caesar Cipher](/Day%208%20Caesar%20Cipher/)                               |             |
 | 9   | [Secret Auction Program](/Day%209%20Blind%20Auction%20Program/)              |             |
 | 10  | [Calculator](/Day%2010%20Calculator%20Function/)                           |             |
