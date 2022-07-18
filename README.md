@@ -45,6 +45,6 @@
 | 38  | [Workout Tracker](/Day%2038%20Workout%20Tracker/)                          |             |
 | 39  | [Flight Deal Finder](/Day%2039%20Flight%20Deal%20Finder/)                    |             |
 | 40  | [Flight Club](/Day%2040%20Flight%20Club/)                                  |             |
-| 41  | [HTML Personal Site](/Day%2041%20HTML%20Personal%20Site/)                    |             |
-| 42  | [Improved HTML Personal Site](/Day%2042%20Improved%20HTML%20Personal%20Site/)  |             |
-
+| 41  | [HTML Personal Site](/Day%2041%20HTML%20Personal%20Site/)                    | Created a personal website using basic HTML | HTML, its tags, and various elements |
+| 42  | [Improved HTML Personal Site](/Day%2042%20Improved%20HTML%20Personal%20Site/)  | Improved day 41 code with tables and forms | HTML forms and tables |             |
+| 43  | [Personal Site with CSS](/Day%2043%20Personal%20Site%20with%20CSS/)  |             |
