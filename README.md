@@ -2,7 +2,7 @@
  This project is a compilation of all final projects at the end of each day in Angela Yu's 100 Days of Code Python course.
  It exists as a reference for me, as well as a means to show others what I have worked on so far. 
  
- ## Code Compilation
+ ## Project Compilation
 | Day | Project                                                            | Description | Things Learnt |
 |:----:|-------------------------------------------------------------------|-------------|---------------|
 | 1   | [Band Name Generator](/Day%201%20Band%20Name%20Generator/)                   | A simple project to create a band name from the names of your city and pet.| Strings, concatenation, variables, input and print functions.
@@ -12,7 +12,7 @@
 | 5   | [Password Generator](/Day%205%20PyPassword%20Generator/)                   | Random password generator using a list of numbers, letters, and symbols. | For loops, shuffling, joining and appending lists. | 
 | 6   | [Escaping the Maze](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json)  |The final project was on [Reeborg's World](https://reeborg.ca/index_en.html) | Functions and loops. |
 | 7   | [Hangman](/Day%207%20Hangman/)                                           | Created hangman game with ASCII art | While loops, len and choice functions, and importing files. |
-| 8   | [Caesar Cipher](/Day%208%20Caesar%20Cipher/)                               |             |
+| 8   | [Caesar Cipher](/Day%208%20Caesar%20Cipher/)                               | A basic Caesar Cipher program to decode and encode text using a specified key |
 | 9   | [Secret Auction Program](/Day%209%20Blind%20Auction%20Program/)              |             |
 | 10  | [Calculator](/Day%2010%20Calculator%20Function/)                           |             |
 | 11  | [Blackjack](/Day%2011%20Blackjack/)                                      |             |
