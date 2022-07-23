@@ -1,6 +1,7 @@
 body {
     background-color: #DAEAF1;
     margin: 0;
+    text-align: center;
 }
 
 h1 {
@@ -13,4 +14,8 @@ h1 {
 
 .pro {
     text-decoration: underline;
+}
+
+.bottom_class {
+    position: absolute;
 }
