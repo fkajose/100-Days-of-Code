@@ -48,3 +48,4 @@
 | 41  | [HTML Personal Site](/Day%2041%20HTML%20Personal%20Site/)                    | Created a personal website using basic HTML | HTML, its tags, and various elements |
 | 42  | [Improved HTML Personal Site](/Day%2042%20Improved%20HTML%20Personal%20Site/)  | Improved day 41 code with tables and forms | HTML forms and tables |             |
 | 43  | [Personal Site with CSS](/Day%2043%20Personal%20Site%20with%20CSS/)  | Improved day 42 code by implementing CSS | CSS, inline CSS, internal CSS, external CSS, classes, id, and selectors. 
+| 44| [Final Personal Website](/Day%2044%20Final%20Personal%20Website/) | Created a new website based on a previous [Sean Halpin website](https://web.archive.org/web/20180819202235js_/http://seanhalpin.io/)  | Favicons, divs, box model, display property, static, relative, and absolute positioning, centering elements, font styling. 
