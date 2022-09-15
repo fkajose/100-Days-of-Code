@@ -49,5 +49,5 @@
 | 42  | [Improved HTML Personal Site](/Day%2042%20Improved%20HTML%20Personal%20Site/)  | Improved day 41 code with tables and forms | HTML forms and tables |             |
 | 43  | [Personal Site with CSS](/Day%2043%20Personal%20Site%20with%20CSS/)  | Improved day 42 code by implementing CSS | CSS, inline CSS, internal CSS, external CSS, classes, id, and selectors. 
 | 44 | [Final Personal Website](/Day%2044%20Final%20Personal%20Website/) | Created a new website based on a previous [Sean Halpin website](https://web.archive.org/web/20180819202235js_/http://seanhalpin.io/)  | Favicons, divs, box model, display property, static, relative, and absolute positioning, centering elements, font styling. 
-| 45 | [Web Scraping with BeautifulSoup](/Day%2045%20Web%20Scraper/) | Simple project to generate a list of movies to watch based on [Empire online's list of top 100 movies](https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/) | BeautifulSoup, web scraping, ethics and legalities of web scraping |
-| 46 | Musical Time Machine | | | 
+| 45 | [Web Scraping with BeautifulSoup](/Day%2045%20Web%20Scraper/) | Simple project to generate a list of movies to watch based on [Empire Online's list of top 100 movies](https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/) | BeautifulSoup, web scraping, ethics and legalities of web scraping |
+| 46 | [Musical Time Machine](/Day%2046%20Musical%20Time%20Machine/) | | | 
