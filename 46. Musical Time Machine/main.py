@@ -23,9 +23,9 @@ top_100_list = [song.get_text(strip=True) for song in track_titles]
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
         scope="playlist-modify-private",
-        redirect_uri=os.environ.get("SPOTIFY_CLIENT_ID"),
-        client_id=os.environ.get("SPOTIFY_CLIENT_SECRET"),
-        client_secret="1ed38baacc3b46788f447af0c1cd25f0",
+        redirect_uri="http://localhost:8888/callback",
+        client_id=os.environ.get("SPOTIFY_CLIENT_ID"),
+        client_secret=os.environ.get("SPOTIFY_CLIENT_SECRET"),
         show_dialog=True,
         cache_path="token.txt"
     )   
