@@ -2,7 +2,11 @@
 
 This repository contains a collection of my projects from the Angela Yu's 100 Days of Code course. Each project is organized in its own folder within the repository.
 
-## Projects
+## Getting Started
+
+To get started with any of the projects, navigate to the corresponding project and follow the instructions in the README.md file.
+
+### Projects
 
 | Day | Project                                                            | Description | Things Learnt |
 |:----:|-------------------------------------------------------------------|-------------|---------------|
@@ -57,10 +61,6 @@ This repository contains a collection of my projects from the Angela Yu's 100 Da
 |49|[Automated Job apllication](/49.%20Automated%20Job%20Application/)|This code is an automation script that uses the Selenium library in Python to apply to job listings on LinkedIn. It starts by logging into the user's LinkedIn account and navigating to a specific job search page. Then, it loops through all available job listings, clicks on each one, and automatically fills in the application form with the user's phone number. The application process is done by interacting with the elements on the web page using Selenium's WebDriver. If the application form is complex and requires further action, the script skips it and moves on to the next job listing. The script ends by closing the web browser after a waiting time of 10 seconds.|Selenium web automation framework, Webdriver interface of the Selenium framework,Knowledge of CSS Selectors and XPath for element locating, Understanding of basic exception handling in Python|
 |50|[Auto Tinder Swiping Bot](/50.%20Auto%20Tinder%20Swiping%20Bot/)|This code is a script for automating the use of the dating app, Tinder. The script uses the Selenium library to control a Chrome web browser and perform actions within the Tinder website. The script starts by loading environment variables for a LinkedIn account to use as the login credentials. Then, it opens the Chrome browser and navigates to the Tinder app, logs in using Facebook, and interacts with pop-up windows to allow location access, disallow notifications, and allow cookies. After logging in, the script performs 100 "likes" on profiles by clicking the "like" button in the app, with a one second delay between each like. In the event that a "matched" pop-up appears, the script clicks it to dismiss it. The script finally closes the browser and ends.|Selenium web automation framework, Webdriver interface of the Selenium framework,Knowledge of CSS Selectors and XPath for element locating, Understanding of basic exception handling in Python|
 |51|[Internet Speed Twitter Complaint Bot](/51.%20Internet%20Speed%20Twitter%20Complaint%20Bot/)|This code creates a bot (class InternetSpeedTwitterBot) that uses Selenium WebDriver to automate the process of measuring internet speed and tweeting the results at the internet service provider. The code uses the Chrome web browser and interacts with the speedtest.net website to measure the download and upload speeds, and then with the twitter.com website to send a tweet with the message and results.|Selenium web automation framework, Webdriver interface of the Selenium framework,Knowledge of CSS Selectors and XPath for element locating|
-
-## Getting Started
-
-To get started with any of the projects, navigate to the corresponding folder and follow the instructions in the README.md file.
 
 ## Technologies Used
 
