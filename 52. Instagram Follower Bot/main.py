@@ -73,7 +73,7 @@ class InstaFollower:
             By.CSS_SELECTOR, '._aano')
 
         # Scroll the followers popup 10 times to load more followers
-        for i in range(10):
+        for i in range(5):
             self.driver.execute_script(
                 "arguments[0].scrollTop = arguments[0].scrollHeight", followers_popup)
             sleep(2)
