@@ -1,114 +1,42 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
-</p>
+# Name Card Website
 
-<h3 align="center">Project Title</h3>
+## 🧐 About
 
-<div align="center">
+This code is a website template that was created using the Ethereal template by HTML5 UP, with some personal touches by Farook. It includes four panels, each with its unique content. The first panel introduces the website and displays a picture of Farook. The second panel displays six icons representing various skills and interests. The third panel provides details on Farook's skills. The fourth panel is a contact form that visitors can use to get in touch with Farook.
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+Users can easily customize the website by adding their own preferred pictures. To do this, simply replace the existing images in the `"/static/images"` directory with your own.
 
-</div>
+To use this code, you will need to have a basic understanding of HTML and CSS. To run the website, open the `"index.html"` file in a web browser or run `server.py`.
 
----
+## 🏁 Getting Started
 
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
-
-## 📝 Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
-
-## 🧐 About <a name = "about"></a>
-
-Write about 1-2 paragraphs describing the purpose of your project.
-
-## 🏁 Getting Started <a name = "getting_started"></a>
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
 What things you need to install the software and how to install them.
 
-```
-Give examples
+```python
+pip install Flask
 ```
 
-### Installing
+### Installing and Usage
 
 A step by step series of examples that tell you how to get a development env running.
 
-Say what the step will be
+- Download the project folder
+- Open the `server.py` file.
+- Install Flask
+- Run the `server.py` file.
 
-```
-Give the example
-```
+## ⛏️ Built Using
 
-And repeat
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/) - Server Framework
 
-```
-until finished
-```
+## ✍️ Authors
 
-End with an example of getting some data out of the system or using it for a little demo.
+- [@fkajose](https://github.com/fkajose)
 
-## 🔧 Running the tests <a name = "tests"></a>
+## 🎉 Acknowledgements
 
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+I would like to express my gratitude to Angela Yu for providing the course "The Complete 2021 Web Development Bootcamp" on Udemy. Additionally, I would like to acknowledge the provider of the template used in this project for their contribution to the development of this website.
