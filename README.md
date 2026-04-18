@@ -66,7 +66,8 @@ To get started with any of the projects, navigate to the corresponding project a
 |54|[Backend Intro with Flask](/54.%20Backend%20Intro%20with%20Flask/)|Wrote a script that demonstrates the use of decorators for measuring the execution speed of two functions, fast_function and slow_function. Wrote a Python script that demonstrates the use of Flask, a micro web framework for building web applications in Python.|Use of decorators, Running Flask in Python, Use of Command Prompt
 |55|[Advanced Higher Lower Game](/55.%20Advanced%20Higher%20Lower%20Game/)|This is a simple Flask app that generates a random number between 0 and 9, and prompts users to guess the number. If the guessed number matches the generated number, a success message with a GIF is shown. If the guessed number is too high or too low, an appropriate message with a corresponding GIF is displayed.| Creating basic Flask app, Handling user input in Flask routes, Handling arguments in decorators
 |56|[Name Card](/56.%20Name%20Card/)|Built a name card website by modifying AJ's Ethereal template. Flask was used to run the web application. | Working with Flask, Working with templates and libraries like Ethereal and FontAwesome to create consistent designs and add icons.
-|57|[Blog Capstone Project Part 1](/57.%20Blog%20Capstone%20Project%20Part%201//)|Flask web application that retrieves blog posts from an API and renders them to the user. The user can view a list of all available posts on the homepage and click on a specific post to view its full content on a separate page.| Using Flask to create a web application to handle user requests and define routes. Using the requests library to retrieve data from an external API. Using Jinja2 templating engine to render data in HTML templates for display.
+|57|[Blog Website](/57.%20Blog%20Website/)|Flask web application that retrieves blog posts from an API and renders them to the user. The user can view a list of all available posts on the homepage and click on a specific post to view its full content on a separate page.| Using Flask to create a web application to handle user requests and define routes. Using the requests library to retrieve data from atone Project Part 1n external API. Using Jinja2 templating engine to render data in HTML templates for display.
+|58|[Tindog Website](/58.%20Web%20Foundation%20Bootstrap//)|Website built using Bootstrap. The website is Tinder for dogs. Front-end only. | Using Bootstrap to create a website front-end.
 
 ## Technologies Used
 
@@ -91,6 +92,7 @@ The projects in this repository were created using a variety of programming lang
 - External:
   - Data Analysis: Numpy, Pandas, Matplotlib, Seaborn
   - Web Scraping: Beautiful Soup, Selenium
+  - Web Dev: Bootstrap
   - ...
 
 ### APIs
