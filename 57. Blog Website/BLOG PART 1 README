@@ -1,0 +1,36 @@
+# Project Name
+
+My Blog
+
+## Description
+
+A blog website where users can view posts on various topics.
+
+## Installation
+
+1. Clone the repository
+2. Install the required dependencies with the following command:
+
+    ```python
+    pip install -r requirements.txt
+    ```
+
+3. Run the application with the following command:
+
+    ```python
+    main.py
+    ```
+
+## Usage
+
+1. Open a web browser and go to `<http://localhost:5000/>` to view all the available posts.
+2. Click on the "Read" button to view the full post.
+3. You can also navigate directly to a specific post by entering the post ID in the URL. For example, `<http://localhost:5000/post/1>` will show post number 1.
+
+## Contributing
+
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
+
+## Credits
+
+This project was created by Farook Ajose as part of the 100 Days of Code Udemy course by Angela Yu.
