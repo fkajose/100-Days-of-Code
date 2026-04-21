@@ -69,6 +69,7 @@ To get started with any of the projects, navigate to the corresponding project a
 |57|[Blog Website](/057-blog-website/)|Flask web application that retrieves blog posts from an API and renders them to the user. The user can view a list of all available posts on the homepage and click on a specific post to view its full content on a separate page.| Using Flask to create a web application to handle user requests and define routes. Using the requests library to retrieve data from atone Project Part 1n external API. Using Jinja2 templating engine to render data in HTML templates for display.
 |58|[Tindog Website](/058-web-foundation-bootstrap//)|Website built using Bootstrap. The website is Tinder for dogs. Front-end only. | Using Bootstrap to create a website front-end.
 |59|[Upgraded Blog Website](/059-upgraded-blog-website/)|Upgraded web application that retrieves blog posts from an API and renders them to the user. The user can view a list of all available posts on the homepage and click on a specific post to view its full content on a separate page.| Using Flask to create a web application to handle user requests and define routes. Using Bootstrap to improve frontend.
+|60|[Upgraded Blog Website (With Form)](/060-blog-with-contact-form/) | Upgraded web application that retrieves blog posts from an API and renders them to the user. Contact form now enableld to send emails. | HTML Forms, Flask request.
 
 ## Technologies Used
 
