@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% block head %}
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -9,11 +10,13 @@
 
     {% block styles %}
     <!-- Load Bootstrap-Flask CSS here -->
+     {{ bootstrap.load_css() }}
 
     <!-- Link to the styles.css here to apply styling to all the child templates.-->
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
     {% endblock %}
     <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
   </head>
   <body>
     {% block content %}{% endblock %}
