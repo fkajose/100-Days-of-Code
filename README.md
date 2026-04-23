@@ -71,6 +71,7 @@ To get started with any of the projects, navigate to the corresponding project a
 |59|[Upgraded Blog Website](/059-upgraded-blog-website/)|Upgraded web application that retrieves blog posts from an API and renders them to the user. The user can view a list of all available posts on the homepage and click on a specific post to view its full content on a separate page.| Using Flask to create a web application to handle user requests and define routes. Using Bootstrap to improve frontend.
 |60|[Upgraded Blog Website (With Form)](/060-blog-with-contact-form/) | Upgraded web application that retrieves blog posts from an API and renders them to the user. Contact form now enableld to send emails. | HTML Forms, Flask request.
 |61|[Web App (With WTForms)](/061-web-app-with-wtforms/) | Simple web application with WTForms. | WTFForms, Flask-WTF, Bootstrap-Flask.
+|62|[Coffee and Wifi Website](/062-coffee-and-wifi/) | Flask web application where users can add and view coffee shops with ratings for coffee quality, WiFi strength, and power socket availability. | Flask, WTForms, Flask-WTF, Bootstrap-Flask.
 
 ## Technologies Used
 
