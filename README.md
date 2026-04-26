@@ -72,6 +72,7 @@ To get started with any of the projects, navigate to the corresponding project a
 |60|[Upgraded Blog Website (With Form)](/060-blog-with-contact-form/) | Upgraded web application that retrieves blog posts from an API and renders them to the user. Contact form now enableld to send emails. | HTML Forms, Flask request.
 |61|[Web App (With WTForms)](/061-web-app-with-wtforms/) | Simple web application with WTForms. | WTFForms, Flask-WTF, Bootstrap-Flask.
 |62|[Coffee and Wifi Website](/062-coffee-and-wifi/) | Flask web application where users can add and view coffee shops with ratings for coffee quality, WiFi strength, and power socket availability. | Flask, WTForms, Flask-WTF, Bootstrap-Flask.
+|63|[Library Website](/063-library-website/)|Flask web application where users can manage a collection of books with ratings. Features include adding new books, editing book ratings, deleting books, and viewing all books sorted by title. Uses SQLite database for persistence.|Flask, SQLAlchemy ORM, Flask-SQLAlchemy, SQLite, CRUD operations, dynamic routing, form handling.
 
 ## Technologies Used
 
