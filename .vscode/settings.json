@@ -1,4 +1,8 @@
 {
-    "workbench.preferredLightColorTheme": "Visual Studio Light",
-    "workbench.colorTheme": "GitHub Light Colorblind (Beta)"
+  "workbench.preferredLightColorTheme": "Visual Studio Light",
+  "workbench.colorTheme": "GitHub Light Colorblind (Beta)",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
 }
