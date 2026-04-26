@@ -45,8 +45,16 @@ def add():
         return redirect(url_for("home"))
     
     return render_template("add.html")
-    
-    
+
+@app.route("/edit/<int:book_id>", methods=["GET", "POST"])
+def edit(book_id):
+    book = db.session.get(Book, book_id)
+    if request.method == "POST":
+        book.rating = request.form["rating"]
+        db.session.commit()
+        return redirect(url_for("home"))
+    return render_template("edit.html", book=book)
+
 if __name__ == "__main__":
     app.run(debug=True)
 
