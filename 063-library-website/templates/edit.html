@@ -8,7 +8,7 @@
     <h2>Book Name: {{ book.title }}</h2>
     <p>Current Rating: {{ book.rating }}/10</p>
     <form action="{{ url_for("edit", book_id=book.id) }}" method="POST">
-      <input type="number" name="rating" min="0" max="10" step="0.1" placeholder="New Rating"/>
+      <input type="number" name="rating" min="0" max="10" step="0.1" placeholder="0.0"/>
       <button type="submit">Change Rating</button>
     </form>
   </body>
