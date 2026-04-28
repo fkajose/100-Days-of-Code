@@ -22,7 +22,7 @@ block content %}
         <p class="overview">{{ movie.description }}</p>
 
         <a href="{{ url_for("update", id=movie.id) }}" class="button">Update</a>
-        <a href="#" class="button delete-button">Delete</a>
+        <a href="{{ url_for("delete", id=movie.id) }}" class="button delete-button">Delete</a>
       </div>
     </div>
   </div>
