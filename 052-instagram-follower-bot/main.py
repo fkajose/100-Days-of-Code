@@ -5,6 +5,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 import os
 from time import sleep
+from dotenv import load_dotenv
+
+# This finds the .env file and loads the variables into the environment
+load_dotenv()
 
 # Path to Chrome driver
 CHROME_DRIVER_PATH = "C:/Users/User/Documents/Development/chromedriver.exe"
@@ -18,14 +22,14 @@ IG_LOGIN_PAGE = "https://www.instagram.com/accounts/login/"
 class InstaFollower:
     """A class to automate following Instagram followers of a given account.
 
-        Attributes:
-            driver_path (str): The file path to the Chrome driver.
+    Attributes:
+        driver_path (str): The file path to the Chrome driver.
 
-        Methods:
-            login(url, username, password): Logs into Instagram with the given username and password.
-            find_followers(account): Navigates to the followers popup of the given account and scrolls through it.
-            follow(): Follows all users listed in the followers popup.
-        """
+    Methods:
+        login(url, username, password): Logs into Instagram with the given username and password.
+        find_followers(account): Navigates to the followers popup of the given account and scrolls through it.
+        follow(): Follows all users listed in the followers popup.
+    """
 
     def __init__(self, driver_path):
         self.service = Service(driver_path)
@@ -69,13 +73,13 @@ class InstaFollower:
         sleep(2)
 
         # Get the followers popup element
-        followers_popup = self.driver.find_element(
-            By.CSS_SELECTOR, '._aano')
+        followers_popup = self.driver.find_element(By.CSS_SELECTOR, "._aano")
 
         # Scroll the followers popup 10 times to load more followers
         for i in range(5):
             self.driver.execute_script(
-                "arguments[0].scrollTop = arguments[0].scrollHeight", followers_popup)
+                "arguments[0].scrollTop = arguments[0].scrollHeight", followers_popup
+            )
             sleep(2)
 
     def follow(self):

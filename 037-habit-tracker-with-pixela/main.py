@@ -3,9 +3,13 @@ import os
 import requests
 import datetime as dt
 import os
+from dotenv import load_dotenv
 
-USERNAME = os.environ.get('PIXELA_USERNAME')
-TOKEN = os.environ.get('PIXELA_TOKEN')
+# This finds the .env file and loads the variables into the environment
+load_dotenv()
+
+USERNAME = os.environ.get("PIXELA_USERNAME")
+TOKEN = os.environ.get("PIXELA_TOKEN")
 
 pixela_endpoint = "https://pixe.la/v1/users"
 
@@ -29,9 +33,7 @@ graph_config = {
     "color": "ajisai",
 }
 
-headers = {
-    "X-USER-TOKEN": TOKEN
-}
+headers = {"X-USER-TOKEN": TOKEN}
 
 # response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
 # print(response.text)

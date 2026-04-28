@@ -2,7 +2,11 @@ from pprint import pprint
 
 from flight_data import FlightData
 import requests
-import os
+import osfrom dotenv import load_dotenv
+
+# This finds the .env file and loads the variables into the environment
+load_dotenv()
+
 
 AFFIL_ID = os.environ.get('TEQUILA_AFFILID')
 APP_KEY = os.environ.get('TEQUILA_API_KEY')

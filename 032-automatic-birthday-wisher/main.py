@@ -10,22 +10,26 @@
 import os
 import smtplib, random, pandas
 import datetime as dt
+from dotenv import load_dotenv
 
-MY_EMAIL = os.environ.get('TEST_GMAIL')
-MY_PASSWORD = os.environ.get('TEST_GMAIL_PASSWORD')
+# This finds the .env file and loads the variables into the environment
+load_dotenv()
+
+MY_EMAIL = os.environ.get("TEST_GMAIL")
+MY_PASSWORD = os.environ.get("TEST_GMAIL_PASSWORD")
 
 today = dt.datetime.now()
 today_tuple = (today.month, today.day)
 
-dataframe = pandas.read_csv('birthdays.csv')
-birthday_list = dataframe.to_dict(orient='records')
+dataframe = pandas.read_csv("birthdays.csv")
+birthday_list = dataframe.to_dict(orient="records")
 
 for dict in birthday_list:
-    birthday_tuple = (dict['month'], dict['day'])
-    name = dict['name']
-    target_email = dict['email']
+    birthday_tuple = (dict["month"], dict["day"])
+    name = dict["name"]
+    target_email = dict["email"]
     if today_tuple == birthday_tuple:
-        letter_path = f'letter_templates/letter_{random.randint(1,3)}.txt'
+        letter_path = f"letter_templates/letter_{random.randint(1,3)}.txt"
         with open(letter_path, "r") as mail_file:
             mail_content = mail_file.read()
             new_content = mail_content.replace("[NAME]", name.title())
@@ -36,5 +40,5 @@ for dict in birthday_list:
             connection.sendmail(
                 from_addr=MY_EMAIL,
                 to_addrs=target_email,
-                msg=f"Subject:Happy Birthday!!! 🥳🎉\n\n{new_content}"
+                msg=f"Subject:Happy Birthday!!! 🥳🎉\n\n{new_content}",
             )

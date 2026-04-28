@@ -2,12 +2,16 @@ import requests
 from datetime import datetime
 import time
 import os
+from dotenv import load_dotenv
+
+# This finds the .env file and loads the variables into the environment
+load_dotenv()
 
 MY_LAT = 6.524379  # Your latitude
 MY_LONG = 3.379206  # Your longitude
 
-MY_EMAIL = os.environ.get('TEST_GMAIL')
-MY_PASSWORD = os.environ.get('TEST_GMAIL_PASSWORD')
+MY_EMAIL = os.environ.get("TEST_GMAIL")
+MY_PASSWORD = os.environ.get("TEST_GMAIL_PASSWORD")
 
 while True:
     time.sleep(60)
@@ -45,7 +49,6 @@ while True:
                 connection.sendmail(
                     from_addr=MY_EMAIL,
                     to_addrs=MY_EMAIL,
-                    msg=f"Subject:Look Up!\n\nDon't miss the ISS. It's right overhead."
+                    msg=f"Subject:Look Up!\n\nDon't miss the ISS. It's right overhead.",
                 )
 # BONUS: run the code every 60 seconds.
-

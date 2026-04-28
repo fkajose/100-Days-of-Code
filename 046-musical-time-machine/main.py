@@ -3,13 +3,19 @@ import requests
 from bs4 import BeautifulSoup
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+from dotenv import load_dotenv
+
+# This finds the .env file and loads the variables into the environment
+load_dotenv()
 # from pprint import pprint
 
 
 # Scraping Billboard 100
-date = input("Which year do you want to travel to? Type the date in this format YYYY-MM-DD: ")
+date = input(
+    "Which year do you want to travel to? Type the date in this format YYYY-MM-DD: "
+)
 response = requests.get("https://www.billboard.com/charts/hot-100/" + date)
-soup = BeautifulSoup(response.text, 'html.parser')
+soup = BeautifulSoup(response.text, "html.parser")
 track_titles = soup.select("li ul li h3")
 top_100_list = [song.get_text(strip=True) for song in track_titles]
 # print(top_100_list)
@@ -27,8 +33,8 @@ sp = spotipy.Spotify(
         client_id=os.environ.get("SPOTIFY_CLIENT_ID"),
         client_secret=os.environ.get("SPOTIFY_CLIENT_SECRET"),
         show_dialog=True,
-        cache_path="token.txt"
-    )   
+        cache_path="token.txt",
+    )
 )
 
 # Get user ID
@@ -36,7 +42,7 @@ user_id = sp.current_user()["id"]
 # print(user_id)
 
 
-#Searching Spotify for songs by title
+# Searching Spotify for songs by title
 song_uris = []
 year = date.split("-")[0]
 for song in top_100_list:
@@ -51,12 +57,12 @@ for song in top_100_list:
 
 # Create new playlist
 playlist = sp.user_playlist_create(
-    user=user_id, 
-    name=f"{date} Billboard 100", 
-    public=False, 
-    description=f'Billboard 100 songs for {date}. Enjoy'
-    )
-        
+    user=user_id,
+    name=f"{date} Billboard 100",
+    public=False,
+    description=f"Billboard 100 songs for {date}. Enjoy",
+)
+
 # # Add tracks to playlist
 sp.playlist_add_items(playlist_id=playlist["id"], items=song_uris)
 print("Successfully added songs to playlist!")

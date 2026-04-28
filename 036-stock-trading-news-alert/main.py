@@ -19,14 +19,18 @@ import html
 import os
 import requests
 from twilio.rest import Client
+from dotenv import load_dotenv
 
-NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
-STOCK_API_KEY = os.environ.get('ALPHAVANTAGE_API_KEY')
+# This finds the .env file and loads the variables into the environment
+load_dotenv()
+
+NEWS_API_KEY = os.environ.get("NEWS_API_KEY")
+STOCK_API_KEY = os.environ.get("ALPHAVANTAGE_API_KEY")
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
-account_sid = os.environ.get('TWILIO_SID')
-auth_token = os.environ.get('TWILIO_AUTH_TOKEN')
+account_sid = os.environ.get("TWILIO_SID")
+auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
 client = Client(account_sid, auth_token)
 
 stock_parameters = {
@@ -44,22 +48,26 @@ def trend_indicator(num):
         return f"🔻{round(num, 2)}%"
 
 
-response = requests.get(url="https://www.alphavantage.co/query", params=stock_parameters)
+response = requests.get(
+    url="https://www.alphavantage.co/query", params=stock_parameters
+)
 response.raise_for_status()
-data = response.json()['Time Series (Daily)']
+data = response.json()["Time Series (Daily)"]
 trading_days = [key for key in data.keys()]
-yesterday_close = float(data[trading_days[0]]['4. close'])
-two_days_ago_close = float(data[trading_days[1]]['4. close'])
+yesterday_close = float(data[trading_days[0]]["4. close"])
+two_days_ago_close = float(data[trading_days[1]]["4. close"])
 
-news_url = ('https://newsapi.org/v2/everything?'
-            f'q={COMPANY_NAME}&'
-            'from=2022-05-04&'
-            'sortBy=relevancy&'
-            'language=en&'
-            f'apiKey={NEWS_API_KEY}')
+news_url = (
+    "https://newsapi.org/v2/everything?"
+    f"q={COMPANY_NAME}&"
+    "from=2022-05-04&"
+    "sortBy=relevancy&"
+    "language=en&"
+    f"apiKey={NEWS_API_KEY}"
+)
 
 news_response = requests.get(news_url)
-news_articles = news_response.json()['articles'][:3]
+news_articles = news_response.json()["articles"][:3]
 
 percent_diff = (yesterday_close - two_days_ago_close) / two_days_ago_close * 100
 if abs(percent_diff) >= 5:
@@ -71,8 +79,8 @@ Headline: {html.unescape(news_articles[news_index]['title'])}
 Brief: {html.unescape(news_articles[news_index]['description'])}
 Link: {html.unescape(news_articles[news_index]['url'])}
 """,
-            from_=os.environ.get('TWILIO_PHONE'),
-            to=os.environ.get('MY_PHONE')
+            from_=os.environ.get("TWILIO_PHONE"),
+            to=os.environ.get("MY_PHONE"),
         )
         print(message.status)
 else:

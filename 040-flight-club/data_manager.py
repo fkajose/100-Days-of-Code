@@ -1,8 +1,12 @@
 import requests
 import datetime as dt
 import os
+from dotenv import load_dotenv
 
-SHEETY_ENDPOINT = os.environ.get('SHEETY_FLIGHT_ENDPOINT')
+# This finds the .env file and loads the variables into the environment
+load_dotenv()
+
+SHEETY_ENDPOINT = os.environ.get("SHEETY_FLIGHT_ENDPOINT")
 prices_url = f"{SHEETY_ENDPOINT}/prices"
 users_url = f"{SHEETY_ENDPOINT}/users"
 
@@ -20,12 +24,10 @@ class DataManager:
         return response.json()["prices"]
 
     def update_data(self, row_id, city_dict):
-        new_data = {
-            "price": {
-                "iataCode": city_dict["iataCode"]
-            }
-        }
-        response = requests.put(url=f"{prices_url}/{row_id}", json=new_data, headers=self.headers)
+        new_data = {"price": {"iataCode": city_dict["iataCode"]}}
+        response = requests.put(
+            url=f"{prices_url}/{row_id}", json=new_data, headers=self.headers
+        )
 
     def get_users(self):
         response = requests.get(url=users_url, headers=self.headers)
