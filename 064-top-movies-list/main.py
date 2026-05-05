@@ -9,11 +9,16 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 import requests
-
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b"
 Bootstrap(app)
+
+load_dotenv()
+TMDB_API_KEY = os.getenv("TMDB_API_KEY")
+TMDB_SEARCH_URL = "https://api.themoviedb.org/3/search/movie"
 
 
 # CREATE DB
@@ -86,17 +91,13 @@ def delete():
 def add():
     form = AddMovieForm()
     if form.validate_on_submit():
-        return redirect(url_for("home"))
+        movie_title = form.title.data
+        response = requests.get(
+            TMDB_SEARCH_URL, params={"api_key": TMDB_API_KEY, "query": movie_title}
+        )
+        data = response.json()["results"]
+        return render_template("select.html", options=data)
     return render_template("add.html", form=form)
-    # if request.method == "POST":
-    #     movie_title = request.form.get("title")
-    #     response = requests.get(
-    #         "https://api.themoviedb.org/3/search/movie",
-    #         params={"api_key": "a9c1e1c8d0f2b4e7aabf0cfeeea9cde", "query": movie_title},
-    #     )
-    #     data = response.json()["results"]
-    #     return render_template("select.html", options=data)
-    # return render_template("add.html", )
 
 
 if __name__ == "__main__":
