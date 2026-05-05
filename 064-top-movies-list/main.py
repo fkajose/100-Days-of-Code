@@ -4,7 +4,7 @@ from flask import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
-from sqlalchemy import Integer, String, Float, desc
+from sqlalchemy import Integer, String, Float
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
@@ -26,6 +26,7 @@ class Base(DeclarativeBase):
     pass
 
 
+# CREATE DB
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///top-movies.db"
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
@@ -47,6 +48,7 @@ with app.app_context():
     db.create_all()
 
 
+# CREATE WTFORM
 class RateMovieForm(FlaskForm):
     rating = StringField("Your Rating Out of 10", validators=[DataRequired()])
     review = StringField("Your Review", validators=[DataRequired()])
@@ -58,13 +60,20 @@ class AddMovieForm(FlaskForm):
     submit = SubmitField("Add Movie")
 
 
+# CREATE ROUTES
 @app.route("/", methods=["GET", "POST"])
 def home():
-    result = db.session.execute(db.select(Movie).order_by(Movie.ranking.desc()))
+    result = db.session.execute(db.select(Movie).order_by(Movie.rating))
     all_movies = result.scalars().all()
+
+    for i in range(len(all_movies)):
+        all_movies[i].ranking = len(all_movies) - i
+    db.session.commit()
+
     return render_template("index.html", movies=all_movies)
 
 
+# UPDATE MOVIE
 @app.route("/update", methods=["GET", "POST"])
 def update():
     form = RateMovieForm()
@@ -78,6 +87,7 @@ def update():
     return render_template("edit.html", form=form)
 
 
+# DELETE MOVIE
 @app.route("/delete")
 def delete():
     movie_id = request.args.get("id")
@@ -87,6 +97,7 @@ def delete():
     return redirect(url_for("home"))
 
 
+# ADD NEW MOVIE
 @app.route("/add", methods=["GET", "POST"])
 def add():
     form = AddMovieForm()
@@ -101,6 +112,7 @@ def add():
     return render_template("add.html", form=form)
 
 
+# FIND MOVIE BY ID AND ADD TO DB
 @app.route("/find", methods=["GET", "POST"])
 def find():
     movie_id = request.args.get("id")
