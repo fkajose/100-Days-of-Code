@@ -16,8 +16,8 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b"
 Bootstrap(app)
 
-# load_dotenv(find_dotenv())
-TMDB_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNDNjMDg3NjRmZWM2YTYyZGI0ZjJlMTYxMWI5MTI3MiIsIm5iZiI6MTc3NzQxMjAzMi4zMjksInN1YiI6IjY5ZjEyN2MwOWQ3OGQyOTNjZWJiODk0MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.JhXvgSFW6fqIt11kwHBSQRdzXsKMHRXkHtR6QpeHwqA"  # os.getenv("TMDB_API_KEY")
+load_dotenv(find_dotenv())
+TMDB_API_KEY = os.getenv("TMDB_ACCESS_TOKEN")
 TMDB_SEARCH_URL = "https://api.themoviedb.org/3/search/movie"
 
 
