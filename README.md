@@ -74,6 +74,9 @@ To get started with any of the projects, navigate to the corresponding project a
 |62|[Coffee and Wifi Website](/062-coffee-and-wifi/) | Flask web application where users can add and view coffee shops with ratings for coffee quality, WiFi strength, and power socket availability. | Flask, WTForms, Flask-WTF, Bootstrap-Flask.
 |63|[Library Website](/063-library-website/)|Flask web application where users can manage a collection of books with ratings. Features include adding new books, editing book ratings, deleting books, and viewing all books sorted by title. Uses SQLite database for persistence.|Flask, SQLAlchemy ORM, Flask-SQLAlchemy, SQLite, CRUD operations, dynamic routing, form handling.
 |64|[Top Movies List](/064-top-movies-list/)|Flask web application where users can discover, add, and rate their favorite movies. Features include searching for movies via TMDB API, adding movies to a personal list, rating and reviewing movies, and viewing all movies ranked by rating. Uses SQLite database for persistence.|Flask, SQLAlchemy ORM, Flask-SQLAlchemy, Flask-WTF, SQLite, TMDB API integration, CRUD operations, form handling.
+|66|[Cafe API](/066-cafe-api/)|Built a RESTful Flask API for managing cafe data with CRUD routes and JSON responses.|Flask, REST APIs, SQLAlchemy, JSON responses, CRUD operations.
+|67|[Upgraded Blog](/067-upgraded-blog/)|Expanded the blog app with post creation, editing, deletion, and rich content support using Flask and CKEditor.|Flask, WTForms, CKEditor, SQLite, CRUD operations, form handling.
+|68|[Flask Authentication](/068-flask-authentication/)|Built a Flask authentication system with user registration, login, logout, and protected routes.|Flask, Flask-Login, password hashing, session management, authentication.
 
 ## Technologies Used
 
