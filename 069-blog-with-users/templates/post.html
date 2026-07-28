@@ -43,14 +43,24 @@
         <div class="comment">
           <!-- TODO: Show all the comments on a post -->
           <ul class="commentList">
-            {% for comment in post.comments %}
+            {% for comment in post.comments: %}
             <li>
               <div class="commenterImage">
-                <img src="{{ comment.comment_author.email | gravatar }} />
+                <img src="{{ comment.comment_author.email | gravatar }}" />
               </div>
               <div class="commentText">
-                {{comment.text|safe}}
-                <span class="sub-text">{{comment.comment_author.name}}</span>
+                <p>{{comment.text|safe}}</p>
+                <span class="date sub-text"
+                  >{{comment.comment_author.name}}</span
+                >
+                <span>
+                  {% if comment.comment_author.email==logged_in.email: %}
+                  <a
+                    href="{{url_for('delete_comment', comment_id=comment.id, post_id=post.id) }}"
+                    >✘</a
+                  >
+                  {% endif %}</span
+                >
               </div>
             </li>
             {% endfor %}
