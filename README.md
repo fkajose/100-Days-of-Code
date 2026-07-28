@@ -77,6 +77,7 @@ To get started with any of the projects, navigate to the corresponding project a
 |66|[Cafe API](/066-cafe-api/)|Built a RESTful Flask API for managing cafe data with CRUD routes and JSON responses.|Flask, REST APIs, SQLAlchemy, JSON responses, CRUD operations.
 |67|[Upgraded Blog](/067-upgraded-blog/)|Expanded the blog app with post creation, editing, deletion, and rich content support using Flask and CKEditor.|Flask, WTForms, CKEditor, SQLite, CRUD operations, form handling.
 |68|[Flask Authentication](/068-flask-authentication/)|Built a Flask authentication system with user registration, login, logout, and protected routes.|Flask, Flask-Login, password hashing, session management, authentication.
+|69|[Blog with Users](/069-blog-with-users/)|Expanded the blog app with user registration, login, comments, admin-only post creation, and protected routes for a fuller multi-user experience.|Flask, Flask-Login, WTForms, CKEditor, SQLAlchemy, password hashing, session handling.
 
 ## Technologies Used
 
