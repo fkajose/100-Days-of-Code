@@ -4,6 +4,7 @@ Day 46 Musical Time Machine/token.txt
 48. Game Playing Bot/practice.py
 .vscode/settings.json
 .env
+.venv/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
