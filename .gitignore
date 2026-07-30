@@ -225,3 +225,5 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+*.pyc
+.DS_Store
