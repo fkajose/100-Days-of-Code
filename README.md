@@ -1,129 +1,139 @@
 # 100-Days-of-Code
 
-This repository contains a collection of my projects from the Angela Yu's 100 Days of Code course. Each project is organized in its own folder within the repository.
+This repository contains a collection of projects completed as part of Angela Yu's 100 Days of Code course, along with later follow-up work and data-analysis exercises. Each project is organized in its own folder.
 
 ## Getting Started
 
-To get started with any of the projects, navigate to the corresponding project and follow the instructions in the README.md file.
+To explore a project, open the corresponding folder and follow the instructions in that project's README or source files.
 
-### Projects
+## Projects
 
-| Day | Project                                                            | Description | Things Learnt |
-|:----:|-------------------------------------------------------------------|-------------|---------------|
-| 1   | [Band Name Generator](/001-band-name-generator/)                   | A simple project to create a band name from the names of your city and pet.| Strings, concatenation, variables, input and print functions.
-| 2   | [Tip Sharing Calculator](/002-tip-calculator/)                       | Uses basic arithmetics to divvy tips for a number of people. | Integers, floats, f-strings, and basic arithmetics. |
-| 3   | [Treasure Island: Mystic Lake](/003-mystic-lake/)                  | Created a text-based game that gives users options in pursuit of a treasure.  | Conditional logic, ifs, elifs, and else. |
-| 4   | [Rock Paper Scissors](/004-rock-paper-scissors/)                   | Recreated the classic rock paper scissors game, with ASCII art. | Lists and the random module |
-| 5   | [Password Generator](/005-pypassword-generator/)                   | Random password generator using a list of numbers, letters, and symbols. | For loops, shuffling, joining and appending lists. |
-| 6   | [Escaping the Maze](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json)  |The final project was on [Reeborg's World](https://reeborg.ca/index_en.html) | Functions and loops. |
-| 7   | [Hangman](/007-hangman/)                                           | Created hangman game with ASCII art | While loops, len and choice functions, and importing files. |
-| 8   | [Caesar Cipher](/008-caesar-cipher/)                               | A basic Caesar Cipher program to decode and encode text using a specified key | Modulo, list operrations, nested loops. |
-| 9   | [Secret Auction Program](/009-blind-auction-program/)              |A program that allows users to bid on items anonymously and announces the winner at the end of the auction.  | Dictionaries, nested dictionaries, and key-value pairs.
-| 10  | [Calculator](/010-calculator-function/)                           | A program that functions as a simple calculator, allowing users to perform basic arithmetic operations.            | Functions, arguments, and return statements.
-| 11  | [Blackjack](/011-blackjack/)                                      |  A text-based game where the user plays against the computer to try and get as close to 21 as possible without going over.           | Functions, modules, loops, and conditional statements.
-| 12  | [Number Guessing Game](/012-guess-the-number/)                    | A program where the computer generates a random number and the user has to guess it within a certain number of attempts.            | While loops, break statements, and f-strings.
-| 13  | [FizzBuzz](/013-fizzbuzz/)                                        | A series of debugging challenges to help you practice debugging skills.            | Debugging techniques, error messages, and code testing.
-| 14  | [Higher Lower Game](/014-higher-lower-game/)                      | A game where the user has to guess which celebrity has more followers on Instagram.            | Web scraping, API requests, and JSON data.
-| 15  | [Coffee Machine](/015-coffee-machine/)                            | A program that simulates a coffee machine and allows users to order drinks.            | Classes, objects, and methods.
-| 16  | [Coffee Machine (OOP)](/016-coffee-maker-oop/)                  | Implementation of Day 15 code with object oriented programming.            | Class inheritance, encapsulation, and polymorphism.
-| 17  | [Quiz Project](/017-quiz-project/)                                | A program that quizzes the user on various topics and keeps track of their score.            | API requests, data structures, and functions.
-| 18  | [Hirst Painting Project](/018-hirst-painting/)                    |  A program that creates a colorful painting in the style of artist Damien Hirst | Working with turtle graphics, color manipulation
-| 19  | [Turtle Race](/019-turtle-race/)                                  |  A program that simulates a race between turtles| Working with the turtle module in Python, Turtle graphics commands, loops, and functions.
-| 20  | [Snake Game, Part 1](/020-021-snake-game/)                         | A program that simulates the classic Snake game, where the user controls a snake and tries to eat as many apples as possible without running into their own tail or the wall.            | Building the snake and making it move            | Understanding the game loop, creating the snake class, working with coordinates
-| 21  | [Snake Game, Part 2](/020-021-snake-game/)                         | Adding food and collision detection            | Creating the food class, detecting collisions, updating the score
-| 22  | [Ping Pong](/022-ping-pong/)                                      | A program that simulates the classic ping pong game            | Using the turtle module, creating the paddle class, detecting collisions. Implementing the game loop, updating the score, detecting game over
-| 23  | [Turtle Crossing Game](/023-turtle-crossing-game/)                | A game where a turtle has to cross a road without getting hit by cars             | Turtle graphics in Python, Working with classes and objects in Python
-| 24  | [Mail Merging](/024-mail-merging/)                                | A program that automates the process of sending personalized emails to a list of recipients            | Working with files in Python, Reading data from CSV files, Sending emails using SMTP
-| 25  | [U.S. States Game](/025-sporcle-s-name-the-state-game/)           | A game where the user has to guess the name of U.S. states based on their location on a map            | Working with Pandas library in Python, Data manipulation and cleaning
-| 26  | [NATO Phonetic Alphabet](/26%20NATO%20Phonetic%20Alphabet/)            | a program that converts user input into NATO phonetic alphabet            | Working with dictionaries in Python, String manipulation
-| 27  | [Miles to Km Converter](/027-miles-to-kilometers-converter/)      | A program that converts miles to kilometers and vice versa           | GUI development with Tkinter, event handling
-| 28  | [Pomodoro](/028-pomodoro/)                                        | A timer that uses the Pomodoro technique            | Working with the tkinter module, using the time module, implementing the Pomodoro technique
-| 29  | [Password Manager](/029-030-password-manager/)                     | A password manager that stores and retrieves passwords from a file            | Creating a graphical user interface with Tkinter, using the file system in Python
-| 30  | [Password Manager with Search](/029-030-password-manager/)         |A password manager that stores and retrieves passwords from a file             | Working with files, encryption and decryption, tkinter GUI development
-| 31  | [Flash Card App](/031-flashcard-app/)                             | A language learning app that displays flashcards and checks your answers            | Using the tkinter module for GUI, reading data from a file, implementing logic for the app
-| 32  | [Automated Birthday Wisher](/32.%20Automatic%20BirthWisher/)      | A program that sends automated birthday wishes to contacts in the user's address book            | Working with dates and times, sending emails with Python
-| 33  | [ISS Overhead Notifier](/033-iss-overhead-notifier/)              | A program that sends the user an email or SMS when the International Space Station (ISS) is overhead            | Working with APIs, sending emails and SMS messages with Python
-| 34  | [Quiz App](/034-quizler-app/)                                     | A quiz application with a graphical user interface (GUI) that allows users to answer multiple-choice questions            | GUI development with Tkinter, working with JSON files
-| 35  | [Rain SMS Alert](/035-rain-sms-alert/)                            |  A program that sends SMS alerts when it is going to rain in the user's locatio             | Working with APIs in Python, Sending SMS using Twilio API
-| 36  | [Stock Alert](/36%20Stock%20Trading%20News%20Alert/)                     | A program that sends email alerts when there is news about a particular stock            | Working with APIs in Python, Parsing XML data
-| 37  | [Habit Tracker](/037-habit-tracker-with-pixela/)                | A program that helps users track their habits and goals          | Working with Pixela API
-| 38  | [Workout Tracker](/038-workout-tracker/)                          | A program that tracks the user's workouts and provides a summary of their progress over time            | Working with Sheety and Nutritionix API
-| 39  | [Flight Deal Finder](/039-flight-deal-finder/)                    | A program that scrapes flight data from a website and notifies the user when there's a good deal available for a certain destination            |  Web scraping with Beautiful Soup, working with APIs (Twilio) and using os
-| 40  | [Flight Club](/040-flight-club/)                                  | A program that automatically searches for and books flights at a discounted price            | Web scraping with Beautiful Soup, working with APIs (Twilio) and using os
-| 41  | [HTML Personal Site](/041-html-personal-site/)                    | Created a personal website using basic HTML | HTML, its tags, and various elements |
-| 42  | [Improved HTML Personal Site](/042-improved-html-personal-site/)  | Improved day 41 code with tables and forms | HTML forms and tables |             |
-| 43  | [Personal Site with CSS](/043-personal-site-with-css/)  | Improved day 42 code by implementing CSS | CSS, inline CSS, internal CSS, external CSS, classes, id, and selectors.
-| 44 | [Final Personal Website](/044-final-personal-website/) | Created a new website based on a previous [Sean Halpin website](https://web.archive.org/web/20180819202235js_/http://seanhalpin.io/)  | Favicons, divs, box model, display property, static, relative, and absolute positioning, centering elements, font styling.
-| 45 | [Web Scraping with BeautifulSoup](/045-web-scraper/) | Simple project to generate a list of movies to watch based on [Empire Online's list of top 100 movies](https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/) | BeautifulSoup, web scraping, ethics and legalities of web scraping |
-| 46 | [Musical Time Machine](/46%20Musical%20Time%20Machine/) | Program accepts any date and creates a Spotify playlist of the songs on Billboard Hot 100 for that date. | Web scraping (BeautifulSoup), API access, documentation  |
-| 47 | [Automated Amazon Price Tracker](/047-automated-amazon-price-tracker/) | Program accepts tracks price of item on Amazon and sends an email if price is below target. | Web scraping (BeautifulSoup), SMTP  |
-| 48 | [Game Playing Bot](/048-game-playing-bot//) | This code uses Selenium to automate the "Cookie Clicker" game by repeatedly clicking on the cookie to earn cookies, and then buying the most expensive upgrade available every 5 seconds until a specified time limit is reached. At the end of the time limit, it prints the total number of cookies earned and the current cookies per second.| Web Scraping and Automation with Selenium  |
-|49|[Automated Job apllication](/049-automated-job-application/)|This code is an automation script that uses the Selenium library in Python to apply to job listings on LinkedIn. It starts by logging into the user's LinkedIn account and navigating to a specific job search page. Then, it loops through all available job listings, clicks on each one, and automatically fills in the application form with the user's phone number. The application process is done by interacting with the elements on the web page using Selenium's WebDriver. If the application form is complex and requires further action, the script skips it and moves on to the next job listing. The script ends by closing the web browser after a waiting time of 10 seconds.|Selenium web automation framework, Webdriver interface of the Selenium framework,Knowledge of CSS Selectors and XPath for element locating, Understanding of basic exception handling in Python|
-|50|[Auto Tinder Swiping Bot](/050-auto-tinder-swiping-bot/)|This code is a script for automating the use of the dating app, Tinder. The script uses the Selenium library to control a Chrome web browser and perform actions within the Tinder website. The script starts by loading environment variables for a LinkedIn account to use as the login credentials. Then, it opens the Chrome browser and navigates to the Tinder app, logs in using Facebook, and interacts with pop-up windows to allow location access, disallow notifications, and allow cookies. After logging in, the script performs 100 "likes" on profiles by clicking the "like" button in the app, with a one second delay between each like. In the event that a "matched" pop-up appears, the script clicks it to dismiss it. The script finally closes the browser and ends.|Selenium web automation framework, Webdriver interface of the Selenium framework,Knowledge of CSS Selectors and XPath for element locating, Understanding of basic exception handling in Python|
-|51|[Internet Speed Twitter Complaint Bot](/051-internet-speed-twitter-complaint-bot/)|This code creates a bot (class InternetSpeedTwitterBot) that uses Selenium WebDriver to automate the process of measuring internet speed and tweeting the results at the internet service provider. The code uses the Chrome web browser and interacts with the speedtest.net website to measure the download and upload speeds, and then with the twitter.com website to send a tweet with the message and results.|Selenium web automation framework, Webdriver interface of the Selenium framework, Knowledge of CSS Selectors and XPath for element locating|
-|52|[Instagram Follower Bot](/052-instagram-follower-bot/main.py/)|Developed a Python script that uses Selenium to automate the process of following Instagram accounts of followers of a specified user account.| Selenium web automation framework, Webdriver interface of the Selenium framework, Knowledge of CSS Selectors and XPath for element locating, Scrolling through a web page popup using Selenium
-|53|[Data Entry Job Automation](/053-data-entry-job-automation/)|The code is a Python script that automates web scraping and data entry tasks using the Selenium library. It scrapes the Zillow website for rental property listings in a specific area, extracts relevant data such as the property address, price, and link, and stores the data in a pandas dataframe. It then fills out and submits a Google form for each property listing using the extracted data.| Selenium web automation framework, Webdriver interface of the Selenium framework, Knowledge of CSS Selectors and XPath for element locating, Filling Forms with Selenium
-|54|[Backend Intro with Flask](/054-backend-intro-with-flask/)|Wrote a script that demonstrates the use of decorators for measuring the execution speed of two functions, fast_function and slow_function. Wrote a Python script that demonstrates the use of Flask, a micro web framework for building web applications in Python.|Use of decorators, Running Flask in Python, Use of Command Prompt
-|55|[Advanced Higher Lower Game](/055-advanced-higher-lower-game/)|This is a simple Flask app that generates a random number between 0 and 9, and prompts users to guess the number. If the guessed number matches the generated number, a success message with a GIF is shown. If the guessed number is too high or too low, an appropriate message with a corresponding GIF is displayed.| Creating basic Flask app, Handling user input in Flask routes, Handling arguments in decorators
-|56|[Name Card](/056-name-card/)|Built a name card website by modifying AJ's Ethereal template. Flask was used to run the web application. | Working with Flask, Working with templates and libraries like Ethereal and FontAwesome to create consistent designs and add icons.
-|57|[Blog Website](/057-blog-website/)|Flask web application that retrieves blog posts from an API and renders them to the user. The user can view a list of all available posts on the homepage and click on a specific post to view its full content on a separate page.| Using Flask to create a web application to handle user requests and define routes. Using the requests library to retrieve data from atone Project Part 1n external API. Using Jinja2 templating engine to render data in HTML templates for display.
-|58|[Tindog Website](/058-web-foundation-bootstrap//)|Website built using Bootstrap. The website is Tinder for dogs. Front-end only. | Using Bootstrap to create a website front-end.
-|59|[Upgraded Blog Website](/059-upgraded-blog-website/)|Upgraded web application that retrieves blog posts from an API and renders them to the user. The user can view a list of all available posts on the homepage and click on a specific post to view its full content on a separate page.| Using Flask to create a web application to handle user requests and define routes. Using Bootstrap to improve frontend.
-|60|[Upgraded Blog Website (With Form)](/060-blog-with-contact-form/) | Upgraded web application that retrieves blog posts from an API and renders them to the user. Contact form now enableld to send emails. | HTML Forms, Flask request.
-|61|[Web App (With WTForms)](/061-web-app-with-wtforms/) | Simple web application with WTForms. | WTFForms, Flask-WTF, Bootstrap-Flask.
-|62|[Coffee and Wifi Website](/062-coffee-and-wifi/) | Flask web application where users can add and view coffee shops with ratings for coffee quality, WiFi strength, and power socket availability. | Flask, WTForms, Flask-WTF, Bootstrap-Flask.
-|63|[Library Website](/063-library-website/)|Flask web application where users can manage a collection of books with ratings. Features include adding new books, editing book ratings, deleting books, and viewing all books sorted by title. Uses SQLite database for persistence.|Flask, SQLAlchemy ORM, Flask-SQLAlchemy, SQLite, CRUD operations, dynamic routing, form handling.
-|64|[Top Movies List](/064-top-movies-list/)|Flask web application where users can discover, add, and rate their favorite movies. Features include searching for movies via TMDB API, adding movies to a personal list, rating and reviewing movies, and viewing all movies ranked by rating. Uses SQLite database for persistence.|Flask, SQLAlchemy ORM, Flask-SQLAlchemy, Flask-WTF, SQLite, TMDB API integration, CRUD operations, form handling.
-|66|[Cafe API](/066-cafe-api/)|Built a RESTful Flask API for managing cafe data with CRUD routes and JSON responses.|Flask, REST APIs, SQLAlchemy, JSON responses, CRUD operations.
-|67|[Upgraded Blog](/067-upgraded-blog/)|Expanded the blog app with post creation, editing, deletion, and rich content support using Flask and CKEditor.|Flask, WTForms, CKEditor, SQLite, CRUD operations, form handling.
-|68|[Flask Authentication](/068-flask-authentication/)|Built a Flask authentication system with user registration, login, logout, and protected routes.|Flask, Flask-Login, password hashing, session management, authentication.
-|69|[Blog with Users](/069-blog-with-users/)|Expanded the blog app with user registration, login, comments, admin-only post creation, and protected routes for a fuller multi-user experience.|Flask, Flask-Login, WTForms, CKEditor, SQLAlchemy, password hashing, session handling.
+| Day | Project | Description | Key Concepts |
+| :---: | --- | --- | --- |
+| 1 | [Band Name Generator](/001-band-name-generator/) | Generates a band name from a city and pet name. | Strings, variables, input/output |
+| 2 | [Tip Sharing Calculator](/002-tip-calculator/) | Splits a bill among a number of people. | Arithmetic, f-strings, floats |
+| 3 | [Treasure Island: Mystic Lake](/003-mystic-lake/) | Text-based decision game with treasure-themed choices. | Conditionals, branching logic |
+| 4 | [Rock Paper Scissors](/004-rock-paper-scissors/) | Classic hand game with ASCII art. | Lists, randomness |
+| 5 | [Password Generator](/005-pypassword-generator/) | Builds a random password from letters, numbers, and symbols. | Loops, list manipulation |
+| 6 | [Escaping the Maze](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json) | Reeborg challenge focused on logic and loops. | Functions, loops |
+| 7 | [Hangman](/007-hangman/) | Classic word-guessing game with ASCII art. | While loops, imports, lists |
+| 8 | [Caesar Cipher](/008-caesar-cipher/) | Encrypts and decrypts text using a shift key. | Modulo, nested loops |
+| 9 | [Secret Auction Program](/009-blind-auction-program/) | Anonymous bidding app that announces the winner. | Dictionaries, nested data |
+| 10 | [Calculator](/010-calculator-function/) | Simple calculator with basic arithmetic operations. | Functions, arguments, return values |
+| 11 | [Blackjack](/011-blackjack/) | Card game against the computer. | Functions, modules, logic |
+| 12 | [Number Guessing Game](/012-guess-the-number/) | User guesses a random number with hints. | While loops, conditionals |
+| 13 | [FizzBuzz](/013-fizzbuzz/) | Debugging practice using common logic issues. | Debugging, testing |
+| 14 | [Higher Lower Game](/014-higher-lower-game/) | Guess which celebrity has more followers. | APIs, JSON, web data |
+| 15 | [Coffee Machine](/015-coffee-machine/) | Simulated coffee-ordering machine. | Classes, objects, methods |
+| 16 | [Coffee Machine (OOP)](/016-coffee-maker-oop/) | Refactor of the coffee app using object-oriented design. | Inheritance, encapsulation |
+| 17 | [Quiz Project](/017-quiz-project/) | General knowledge quiz with scoring. | Data structures, APIs |
+| 18 | [Hirst Painting Project](/018-hirst-painting/) | Generates a Damien Hirst-inspired painting. | Turtle graphics, color manipulation |
+| 19 | [Turtle Race](/019-turtle-race/) | Simulates a race between turtles. | Turtle graphics, loops |
+| 20 | [Snake Game, Part 1](/020-021-snake-game/) | Snake movement and game loop setup. | Game loop, coordinates, classes |
+| 21 | [Snake Game, Part 2](/020-021-snake-game/) | Adds food, collision detection, and scoring. | Collision detection, score logic |
+| 22 | [Ping Pong](/022-ping-pong/) | Two-player arcade-style pong game. | Classes, collisions, score tracking |
+| 23 | [Turtle Crossing Game](/023-turtle-crossing-game/) | Cross-the-road game with moving obstacles. | OOP, game loops |
+| 24 | [Mail Merging](/024-mail-merging/) | Personalizes letters for multiple recipients. | File handling, CSV processing |
+| 25 | [U.S. States Game](/025-sporcle-s-name-the-state-game/) | Guess state names on a map. | Pandas, data cleaning |
+| 26 | [NATO Phonetic Alphabet](/026-nato-phonetic-alphabet/) | Converts user input into NATO code words. | Dictionaries, string handling |
+| 27 | [Miles to Km Converter](/027-miles-to-kilometers-converter/) | Converts distance between miles and kilometers. | Tkinter, GUI events |
+| 28 | [Pomodoro](/028-pomodoro/) | Timer based on the Pomodoro technique. | Tkinter, time module |
+| 29 | [Password Manager](/029-030-password-manager/) | Stores and retrieves saved passwords. | Tkinter, file handling |
+| 30 | [Password Manager with Search](/029-030-password-manager/) | Enhanced password manager with searching features. | File operations, encryption concepts |
+| 31 | [Flash Card App](/031-flashcard-app/) | Practice vocabulary using interactive flashcards. | Tkinter, file-based data |
+| 32 | [Automated Birthday Wisher](/032-automatic-birthday-wisher/) | Sends birthday emails automatically. | Date handling, SMTP |
+| 33 | [ISS Overhead Notifier](/033-iss-overhead-notifier/) | Alerts when the ISS is overhead. | API integration, email/SMS |
+| 34 | [Quiz App](/034-quizler-app/) | Multiple-choice quiz with GUI. | Tkinter, JSON |
+| 35 | [Rain SMS Alert](/035-rain-sms-alert/) | Sends rain alerts via SMS. | APIs, Twilio |
+| 36 | [Stock Trading News Alert](/036-stock-trading-news-alert/) | Sends stock-related alerts and news summaries. | API usage, XML parsing |
+| 37 | [Habit Tracker](/037-habit-tracker-with-pixela/) | Tracks routines with graphing via Pixela. | API integration, habit tracking |
+| 38 | [Workout Tracker](/038-workout-tracker/) | Tracks workouts and nutrition data. | Sheety, Nutritionix APIs |
+| 39 | [Flight Deal Finder](/039-flight-deal-finder/) | Finds discounted flight deals and notifies the user. | Web scraping, APIs |
+| 40 | [Flight Club](/040-flight-club/) | Automated flight deal monitoring and alerts. | Web scraping, automation |
+| 41 | [HTML Personal Site](/041-html-personal-site/) | Personal landing page built with HTML. | HTML structure, semantic tags |
+| 42 | [Improved HTML Personal Site](/042-improved-html-personal-site/) | Updated personal site with tables and forms. | HTML forms, tables |
+| 43 | [Personal Site with CSS](/043-personal-site-with-css/) | Styled personal website using CSS. | CSS selectors, layout |
+| 44 | [Final Personal Website](/044-final-personal-website/) | Polished personal site inspired by a known design. | CSS positioning, layout design |
+| 45 | [Web Scraping with BeautifulSoup](/045-web-scraper/) | Pulls movie data from a ranked list. | BeautifulSoup, scraping |
+| 46 | [Musical Time Machine](/046-musical-time-machine/) | Creates a Spotify playlist from Billboard hits for a chosen date. | Web scraping, Spotify API |
+| 47 | [Automated Amazon Price Tracker](/047-automated-amazon-price-tracker/) | Tracks priced items and emails alerts. | BeautifulSoup, email automation |
+| 48 | [Game Playing Bot](/048-game-playing-bot/) | Automates cookie-clicking gameplay. | Selenium, browser automation |
+| 49 | [Automated Job Application](/049-automated-job-application/) | Applies to job listings using Selenium. | Selenium, CSS selectors |
+| 50 | [Auto Tinder Swiping Bot](/050-auto-tinder-swiping-bot/) | Automates basic Tinder swiping actions. | Selenium, browser automation |
+| 51 | [Internet Speed Twitter Complaint Bot](/051-internet-speed-twitter-complaint-bot/) | Measures internet speed and posts a complaint tweet. | Selenium, speedtest integration |
+| 52 | [Instagram Follower Bot](/052-instagram-follower-bot/) | Follows accounts of a target user’s followers. | Selenium, automation |
+| 53 | [Data Entry Job Automation](/053-data-entry-job-automation/) | Scrapes listings and submits them to a Google Form. | Selenium, data entry automation |
+| 54 | [Backend Intro with Flask](/054-backend-intro-with-flask/) | Introductory Flask project and timing decorator example. | Flask, decorators |
+| 55 | [Advanced Higher Lower Game](/055-advanced-higher-lower-game/) | Number-guessing web app with GIF feedback. | Flask, routes, templates |
+| 56 | [Name Card](/056-name-card/) | Small Flask landing page using a template. | Flask, templates, design |
+| 57 | [Blog Website](/057-blog-website/) | Renders blog posts from an external API. | Flask, API calls, Jinja |
+| 58 | [Tindog Website](/058-web-foundation-bootstrap/) | Bootstrap-based landing page for a dog dating app. | Bootstrap, front-end design |
+| 59 | [Upgraded Blog Website](/059-upgraded-blog-website/) | Improved blog site with a cleaner front end. | Flask, Bootstrap |
+| 60 | [Blog Website (With Contact Form)](/060-blog-with-contact-form/) | Blog app with a working contact form. | HTML forms, Flask requests |
+| 61 | [Web App (With WTForms)](/061-web-app-with-wtforms/) | Example app using WTForms and Bootstrap. | WTForms, Flask-WTF |
+| 62 | [Coffee and Wifi Website](/062-coffee-and-wifi/) | Tracks coffee shops and Wi-Fi quality. | Flask, WTForms, SQLite |
+| 63 | [Library Website](/063-library-website/) | Book tracker for adding, rating, and deleting books. | Flask, SQLAlchemy, CRUD |
+| 64 | [Top Movies List](/064-top-movies-list/) | Movie list app with ranking and TMDB integration. | Flask, SQLAlchemy, API integration |
+| 66 | [Cafe API](/066-cafe-api/) | REST API for cafe data and management. | Flask, REST APIs, JSON |
+| 67 | [Upgraded Blog](/067-upgraded-blog/) | Blog app with create, edit, delete, and rich text support. | Flask, CKEditor, SQLite |
+| 68 | [Flask Authentication](/068-flask-authentication/) | Registration, login, logout, and protected pages. | Flask-Login, hashing, sessions |
+| 69 | [Blog with Users](/069-blog-with-users/) | Multi-user blog with protected routes and comments. | SQLAlchemy, auth, form handling |
+| 71 | [Blog for Deployment](/071-blog-for-deployment/) | Deployment-focused blog app for production use. | Deployment basics, app configuration |
+| 72 | [Data Exploration](/072-data-exploration/) | Exploratory data analysis project. | Pandas, data wrangling |
+| 73 | [Programming Languages](/073-programming-languages/) | Analysis of programming language trends and usage. | Data visualization, analysis |
+| 74 | [LEGO Data Analysis](/074-LEGO-data-analysis/) | Explores LEGO dataset patterns and insights. | Data analysis, plotting |
+| 75 | [Google Trends Data Viz](/075-Google-trends-data-viz/) | Visualizes search trends using public data. | Plotting, trend analysis |
+| 76 | [Google Play Store Project](/076-Google-Play-Store-Project/) | Data analysis of app-store data. | Pandas, analytics |
+| 77 | [Computation with NumPy](/077-computation-with-NumPy/) | Numerical computing exercises and examples. | NumPy, array operations |
+| 78 | [Seaborn Linear Regression](/078-seaborn-linear-regression/) | Regression examples with Seaborn visualizations. | Seaborn, regression |
+| 79 | [Nobel Prize Analysis](/079-Nobel-prize-analysis/) | Analyzes Nobel Prize data across time. | Data exploration, storytelling |
+| 80 | [Semmelweis Analysis](/080-Semmelweis-analysis/) | Reproduces a famous historical medical dataset analysis. | Data cleaning, statistics |
+| 81 | [Multivariable Regression](/081-multivariable-regression/) | Predictive modeling examples with multiple variables. | Regression, model evaluation |
 
 ## Technologies Used
 
-The projects in this repository were created using a variety of programming languages, frameworks, and tools. Some of the technologies used include:
+The projects in this repository use a mix of Python, web development, automation, and data analysis tools.
 
 ### Programming Languages
 
 - Python
 - HTML
 - CSS
-- ...
+- SQL
+- JavaScript
 
-### Frameworks
+### Frameworks and Libraries
 
-- Flask (Python)
-- Django (Python)
-- ...
+- Flask
+- Bootstrap
+- Tkinter
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- BeautifulSoup
+- Selenium
+- SQLAlchemy
+- WTForms
 
-### Libraries
+### APIs and Services
 
-- Internal: os, json, requests, smtplib, ...
-- External:
-  - Data Analysis: Numpy, Pandas, Matplotlib, Seaborn
-  - Web Scraping: Beautiful Soup, Selenium
-  - Web Dev: Bootstrap
-  - ...
-
-### APIs
-
-- OpenWeatherMap API (accessing weather data)
-- NewsAPI (accessing news articles)
-- Alphavantage API (fetching financial data)
-- Twilio API (sending SMS messages)
-- Sheety API (accessing and manipulating Google Sheets data)
-- Pixela API (creating custom graphs and adding data to them)
-- Nutritionix API (fetching nutritional and exercise activity data)
-- Spotify API (accessing and manipulating Spotify music data)
-- ...
+- OpenWeatherMap
+- NewsAPI
+- Alpha Vantage
+- Spotify API
+- Twilio API
+- Sheety
+- Pixela
+- Nutritionix
+- TMDB
 
 ### Tools
 
-- Replit
 - Git and GitHub
-- VS Code (Integrated Development Environments)
-- PyCharm (Integrated Development Environments)
-- ...
+- VS Code
+- PyCharm
+- Replit
 
 ## Author
 
@@ -131,4 +141,4 @@ The projects in this repository were created using a variety of programming lang
 
 ## Acknowledgments
 
-I would like to thank Angela Yu for creating the 100 Days of Code course and providing me with the opportunity to learn and work on these projects.
+I would like to thank Angela Yu for creating the 100 Days of Code course and for inspiring this journey of hands-on learning.
