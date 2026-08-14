@@ -15,17 +15,18 @@ print("To translate from Morse Code to text, enter 'm'")
 print("To translate from regular text to Morse Code, enter 'r'")
 
 while True:
-    morse_or_text = input("Morse Code or Regular Text? Type 'm' or 'r':").lower()
+    morse_or_text = input("Morse Code or Regular Text? Type 'm' or 'r':").upper()
 
-    if morse_or_text == "r":
-        source = input("Enter your text here:").lower()
-        translated = source.replace(" ", "/ ")
-        for idx, letter in enumerate(dictionary):
-            if letter in source:
-                translated = translated.replace(letter, f"{dictionary[letter]} ")
+    if morse_or_text == "R":
+        source = input("Enter your text here:").upper()
+        translated = source.strip()
+        unique_chars = set(source)
+        for char in unique_chars:
+            if char in dictionary.keys():
+                translated = translated.replace(char, f"{dictionary[char]} ")
         break
-    elif morse_or_text == "m":
-        source = input("Enter your text here:").lower()
+    elif morse_or_text == "M":
+        source = input("Enter your text here:").upper()
         words = source.strip().split(" / ")
         text_words = []
         for word in words:
