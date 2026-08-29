@@ -89,6 +89,8 @@ To explore a project, open the corresponding folder and follow the instructions 
 | 79 | [Nobel Prize Analysis](/079-Nobel-prize-analysis/) | Analyzes Nobel Prize data across time. | Data exploration, storytelling |
 | 80 | [Semmelweis Analysis](/080-Semmelweis-analysis/) | Reproduces a famous historical medical dataset analysis. | Data cleaning, statistics |
 | 81 | [Multivariable Regression](/081-multivariable-regression/) | Predictive modeling examples with multiple variables. | Regression, model evaluation |
+| 82 | [Morse Code Translator](/082-morse-code-translator/) | Encodes and decodes text using Morse code. | String manipulation, character encoding |
+| 83 | [Personal Portfolio](https://github.com/fkajose/portfolio) | Professional portfolio website showcasing projects and skills. | Web development, responsive design, deployment, Supabase |
 
 ## Technologies Used
 
