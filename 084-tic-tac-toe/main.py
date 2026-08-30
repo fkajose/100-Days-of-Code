@@ -12,17 +12,23 @@ import numpy as np
 
 print("Tic Tac Toe")
 print("Perfect for 2 players.")
+X_marker = "❌"
+O_marker = "⭕"
+blank_marker = "⏹️"
+
 p1_choice = ""
-while p1_choice not in ["❌", "⭕"]:
+while p1_choice not in [X_marker, O_marker]:
     p1_choice = (
-        input("Player 1: X or O? ").upper().replace("X", "❌").replace("O", "⭕")
+        input("Player 1: X or O? ")
+        .upper()
+        .replace("X", X_marker)
+        .replace("O", O_marker)
     )
 
-p2_choice = "❌" if p1_choice == "⭕" else "⭕"
+p2_choice = X_marker if p1_choice == O_marker else O_marker
 print(f"Player 1 is {p1_choice}. Player 2 is {p2_choice}")
 
-
-game_array = np.full((3, 3), "⏹️")
+game_array = np.full((3, 3), blank_marker)
 check_array = np.array([["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]])
 
 
@@ -50,23 +56,21 @@ def display_boards(board, guide):
 # Test the display
 display_boards(game_array, check_array)
 
-num_list = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-
 
 def play(player: int, marker: str):
     while True:
-        player_input = input(f"Player {player} >> ")
+        try:
+            player_input = int(input(f"Player {player} >> ")) - 1
 
-        # Check if the number is valid AND hasn't been taken yet
-        if player_input in num_list and player_input in check_array:
-            # Create the boolean mask once
-            mask = check_array == player_input
+            # Check if the number is valid AND hasn't been taken yet
+            if 0 <= player_input < 10 and game_array.flat[player_input] == blank_marker:
 
-            # Update both arrays using the mask
-            game_array[mask] = marker
-            check_array[mask] = marker
-            break
-        else:
+                game_array.flat[player_input] = marker
+
+                break
+            else:
+                print("Invalid Choice or spot already taken! Try again.")
+        except ValueError:
             print("Invalid Choice or spot already taken! Try again.")
 
     display_boards(game_array, check_array)
@@ -74,37 +78,37 @@ def play(player: int, marker: str):
 
 
 def play_on():
-    X_win = ["❌"] * 3
-    O_win = ["⭕"] * 3
+    X_win = [X_marker] * 3
+    O_win = [O_marker] * 3
 
     # diagonal checks
-    diag = np.diag(check_array)
-    anti_diag = np.diag(np.fliplr(check_array))
+    diag = np.diag(game_array)
+    anti_diag = np.diag(np.fliplr(game_array))
 
     if all(diag == X_win) or all(anti_diag == X_win):
-        print("❌ wins!")
+        print(f"{X_marker} wins!")
         return False
     elif all(diag == O_win) or all(anti_diag == O_win):
-        print("⭕ wins!")
+        print(f"{O_marker} wins!")
         return False
 
     # row check
-    for row in check_array:
+    for row in game_array:
         if all(row == X_win):
-            print("❌ wins!")
+            print(f"{X_marker} wins!")
             return False
         elif all(row == O_win):
-            print("⭕ wins!")
+            print(f"{O_marker} wins!")
             return False
 
     # col check
-    for num in range(len(check_array)):
-        col = check_array[:, num]
+    for num in range(len(game_array)):
+        col = game_array[:, num]
         if all(col == X_win):
-            print("❌ wins!")
+            print(f"{X_marker} wins!")
             return False
         elif all(col == O_win):
-            print("⭕ wins!")
+            print(f"{O_marker} wins!")
             return False
 
     return True
