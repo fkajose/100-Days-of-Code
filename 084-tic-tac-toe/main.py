@@ -25,8 +25,6 @@ print("\n", game_array, "\n")
 
 num_list = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
-playing = True
-
 
 def play(player: int, marker: str):
     while True:
@@ -41,8 +39,48 @@ def play(player: int, marker: str):
             print("Invalid Choice or spot already taken! Try again.")
 
     print("\n", game_array, "\n")
+    return play_on()
 
 
+def play_on():
+    X_win = ["X"] * 3
+    O_win = ["O"] * 3
+
+    # diagonal checks
+    diag = np.diag(game_array)
+    anti_diag = np.diag(np.fliplr(game_array))
+
+    if all(diag == X_win) or all(anti_diag == X_win):
+        print("X wins!")
+        return False
+    elif all(diag == O_win) or all(anti_diag == O_win):
+        print("O wins!")
+        return False
+
+    # row check
+    for row in game_array:
+        if all(row == X_win):
+            print("X wins!")
+            return False
+        elif all(row == O_win):
+            print("O wins!")
+            return False
+
+    # col check
+    for num in range(len(game_array)):
+        col = game_array[:, num]
+        if all(col == X_win):
+            print("X wins!")
+            return False
+        elif all(col == O_win):
+            print("O wins!")
+            return False
+
+    return True
+
+
+playing = True
 while playing:
-    play(1, p1_choice)
-    play(2, p2_choice)
+    playing = play(1, p1_choice)
+    if playing:
+        playing = play(2, p2_choice)
