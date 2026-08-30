@@ -13,67 +13,98 @@ import numpy as np
 print("Tic Tac Toe")
 print("Perfect for 2 players.")
 p1_choice = ""
-while p1_choice not in ["X", "O"]:
-    p1_choice = input("Player 1: X or O? ").upper()
+while p1_choice not in ["❌", "⭕"]:
+    p1_choice = (
+        input("Player 1: X or O? ").upper().replace("X", "❌").replace("O", "⭕")
+    )
 
-p2_choice = "X" if p1_choice == "O" else "O"
+p2_choice = "❌" if p1_choice == "⭕" else "⭕"
 print(f"Player 1 is {p1_choice}. Player 2 is {p2_choice}")
 
-print("Here is your board. Select a number to play in that position.")
-game_array = np.array([["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]])
-print("\n", game_array, "\n")
+
+game_array = np.full((3, 3), "⏹️")
+check_array = np.array([["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]])
+
+
+def display_boards(board, guide):
+    print("Here is your board. Select a number to play in that position.")
+    print("\n   CURRENT BOARD          POSITION GUIDE")
+    print("  ━━━━━━━━━━━━━━━        ━━━━━━━━━━━━━━━")
+
+    # Loop through the rows (0, 1, 2)
+    for i in range(3):
+        # Join row elements with spaces for the game board
+        board_row = "  ".join(board[i])
+        # Join row elements with vertical bars for a crisp grid look
+        guide_row = " | ".join(guide[i])
+
+        # Print the matching rows side-by-side
+        print(f"    {board_row}                 {guide_row}")
+
+        # Add a horizontal divider between rows, but not after the last row
+        if i < 2:
+            print("                   ───>     ───+───+───")
+    print()
+
+
+# Test the display
+display_boards(game_array, check_array)
 
 num_list = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 
 def play(player: int, marker: str):
     while True:
-        player_input = input(f"Player {player}: Select a number>> ")
+        player_input = input(f"Player {player} >> ")
 
         # Check if the number is valid AND hasn't been taken yet
-        if player_input in num_list and player_input in game_array:
-            # Replace the string number with the player's marker
-            game_array[game_array == player_input] = marker
-            break  # Exit the loop since a valid move was made
+        if player_input in num_list and player_input in check_array:
+            # Create the boolean mask once
+            mask = check_array == player_input
+
+            # Update both arrays using the mask
+            game_array[mask] = marker
+            check_array[mask] = marker
+            break
         else:
             print("Invalid Choice or spot already taken! Try again.")
 
-    print("\n", game_array, "\n")
+    display_boards(game_array, check_array)
     return play_on()
 
 
 def play_on():
-    X_win = ["X"] * 3
-    O_win = ["O"] * 3
+    X_win = ["❌"] * 3
+    O_win = ["⭕"] * 3
 
     # diagonal checks
-    diag = np.diag(game_array)
-    anti_diag = np.diag(np.fliplr(game_array))
+    diag = np.diag(check_array)
+    anti_diag = np.diag(np.fliplr(check_array))
 
     if all(diag == X_win) or all(anti_diag == X_win):
-        print("X wins!")
+        print("❌ wins!")
         return False
     elif all(diag == O_win) or all(anti_diag == O_win):
-        print("O wins!")
+        print("⭕ wins!")
         return False
 
     # row check
-    for row in game_array:
+    for row in check_array:
         if all(row == X_win):
-            print("X wins!")
+            print("❌ wins!")
             return False
         elif all(row == O_win):
-            print("O wins!")
+            print("⭕ wins!")
             return False
 
     # col check
-    for num in range(len(game_array)):
-        col = game_array[:, num]
+    for num in range(len(check_array)):
+        col = check_array[:, num]
         if all(col == X_win):
-            print("X wins!")
+            print("❌ wins!")
             return False
         elif all(col == O_win):
-            print("O wins!")
+            print("⭕ wins!")
             return False
 
     return True
