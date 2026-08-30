@@ -91,6 +91,7 @@ To explore a project, open the corresponding folder and follow the instructions 
 | 81 | [Multivariable Regression](/081-multivariable-regression/) | Predictive modeling examples with multiple variables. | Regression, model evaluation |
 | 82 | [Morse Code Translator](/082-morse-code-translator/) | Encodes and decodes text using Morse code. | String manipulation, character encoding |
 | 83 | [Personal Portfolio](https://github.com/fkajose/portfolio) | Professional portfolio website showcasing projects and skills. | Web development, responsive design, deployment, Supabase |
+| 84 | [Tic Tac Toe](/084-tic-tac-toe/) | A command-line Tic Tac Toe game with player-vs-player and player-vs-AI modes. | Game logic, AI strategy, NumPy |
 
 ## Technologies Used
 
